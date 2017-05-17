@@ -16,7 +16,7 @@ public class KeyGen {
 
 	public KeyGen() throws IOException {
 
-		if (!FileOptions.checkFile("") || !FileOptions.checkFile("")) {
+		if (!FileOptions.checkFile("Privkey.rsa") || !FileOptions.checkFile("Pubkey.rsa")) {
 			keyGeneration(512);
 
 			// writing the keys in the file using Write Function
